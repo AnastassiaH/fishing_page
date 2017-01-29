@@ -1,0 +1,325 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf); }
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: "Open Sans ExtraBold";
+  src: url(../fonts/OpenSans-ExtraBold.ttf); }
+.part {
+  -webkid-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  font: 13px/16px "Open Sans", Tahoma, sans-serif;
+  color: #000;
+  background: #fff url(../img/bg.jpg) repeat;
+  text-align: center; }
+
+ol, ul {
+  list-style: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+header {
+  text-transform: uppercase;
+  height: 100vh;
+  background-image: url(../img/bg_main.jpg);
+  background-position: bottom;
+  background-size: cover; }
+  header .top_header {
+    background-color: #FFFFFF;
+    padding: 25px 0; }
+    header .top_header img {
+      height: 50px; }
+    header .top_header i {
+      margin-left: 10px; }
+  header p {
+    display: inline-block;
+    font-family: 'Lato';
+    margin: 0;
+    padding: 10px 0; }
+  header p.cart {
+    background-image: url(../img/cart.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 25px; }
+  header .menu_header {
+    background-color: #03A9F5;
+    text-align: center; }
+    header .menu_header ul {
+      display: block;
+      width: 282px;
+      margin: 0 auto; }
+    header .menu_header ul li {
+      display: block;
+      float: left; }
+      header .menu_header ul li a {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        line-height: 14px;
+        text-decoration: none;
+        padding: 15px 10px 12px; }
+      header .menu_header ul li a:hover {
+        background-color: #03A9B5; }
+  header .main {
+    margin-top: 120px; }
+    header .main .search {
+      height: 40px;
+      max-width: 565px;
+      min-width: 300px;
+      margin: 0 auto; }
+      header .main .search .col-sm-8,
+      header .main .search .col-sm-4 {
+        padding: 0; }
+      header .main .search input,
+      header .main .search button {
+        display: inline-block;
+        width: 100%;
+        height: 40px;
+        border: none; }
+      header .main .search input {
+        padding-left: 10px; }
+      header .main .search button {
+        background-color: #2DCA73;
+        color: #fff;
+        font-size: 14px;
+        flex-flow: 'Lato';
+        font-weight: bold; }
+
+.top_gewasser {
+  padding-top: 40px;
+  padding-bottom: 20px; }
+  .top_gewasser h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: "Lato"; }
+  .top_gewasser .tabs {
+    margin-top: 30px; }
+  .top_gewasser .nav-tabs {
+    border: none;
+    width: 364px;
+    margin: 0 auto; }
+  .top_gewasser ul li a,
+  .top_gewasser ul li a:hover {
+    text-transform: uppercase;
+    font-family: "Lato";
+    font-size: 12px;
+    border: none;
+    border-radius: 0px;
+    margin: 0 10px;
+    background-color: #F0F4F7;
+    color: #909090;
+    padding: 5px 10px; }
+  .top_gewasser ul li.active a,
+  .top_gewasser ul li.active:hover a {
+    background-color: #03A9F5;
+    color: #fff;
+    border: none; }
+  .top_gewasser .tab-content {
+    margin-top: 40px; }
+    .top_gewasser .tab-content .image {
+      height: 300px;
+      width: 100%;
+      overflow: hidden; }
+      .top_gewasser .tab-content .image img {
+        height: 300px;
+        width: 100%; }
+    .top_gewasser .tab-content .img_caption {
+      margin-top: 20px; }
+      .top_gewasser .tab-content .img_caption .rate {
+        height: 15px;
+        width: 75px;
+        margin: 0 auto;
+        background-image: url(../img/star_dark.png);
+        background-repeat: repeat-x; }
+        .top_gewasser .tab-content .img_caption .rate div {
+          background-image: url(../img/star.png);
+          height: 100%; }
+      .top_gewasser .tab-content .img_caption .rate_one > div {
+        width: 0%; }
+      .top_gewasser .tab-content .img_caption .rate_two > div {
+        width: 31%; }
+      .top_gewasser .tab-content .img_caption .rate_tree > div {
+        width: 100%; }
+      .top_gewasser .tab-content .img_caption .rate_four > div {
+        width: 100%; }
+    .top_gewasser .tab-content p {
+      margin-top: 7px; }
+
+.banners .item {
+  position: relative;
+  height: 375px;
+  overflow: hidden;
+  padding: 0 1px;
+  font-family: 'Lato'; }
+  .banners .item img {
+    height: 100%; }
+.banners .description {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all .3s;
+  color: #fff; }
+  .banners .description p {
+    font-size: 16px;
+    margin-top: 45%; }
+  .banners .description h5 {
+    font-size: 20px; }
+  .banners .description button {
+    height: 35px;
+    width: 125px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: transparent;
+    margin-top: 10px; }
+.banners .item:hover .description {
+  opacity: 1; }
+
+.how_it_works {
+  margin-top: 30px; }
+  .how_it_works h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: "Lato";
+    margin-bottom: 100px; }
+  .how_it_works .fishing {
+    background-color: #F0F4F7;
+    position: relative;
+    font-family: "Lato";
+    padding-bottom: 60px; }
+    .how_it_works .fishing img {
+      position: absolute;
+      top: -43px;
+      left: 39%; }
+    .how_it_works .fishing h4 {
+      margin-top: 90px;
+      text-transform: uppercase; }
+    .how_it_works .fishing p {
+      width: 70%;
+      margin: 20px auto; }
+
+.products {
+  font-family: "Lato";
+  position: relative; }
+  .products .p_items {
+    margin-bottom: 15px;
+    text-align: left; }
+  .products h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 55px; }
+  .products .slide .image {
+    height: 230px;
+    overflow: hidden;
+    width: 35%;
+    float: left; }
+    .products .slide .image img {
+      width: 100%;
+      height: 100%; }
+  .products .slide .caption {
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px; }
+    .products .slide .caption .rate {
+      height: 15px;
+      width: 75px;
+      background-image: url(../img/star_dark.png);
+      background-repeat: repeat-x; }
+      .products .slide .caption .rate div {
+        background-image: url(../img/star.png);
+        height: 100%; }
+    .products .slide .caption .rate_one > div {
+      width: 0%; }
+    .products .slide .caption .rate_two > div {
+      width: 0%; }
+    .products .slide .caption .rate_tree > div {
+      width: 0%; }
+    .products .slide .caption .rate_four > div {
+      width: 0%; }
+    .products .slide .caption p {
+      margin-top: 17px;
+      font-size: 14px; }
+    .products .slide .caption button {
+      height: 35px;
+      width: 35px;
+      background-color: transparent;
+      border: 1px solid #434f5b;
+      color: #434f5b; }
+      .products .slide .caption button span {
+        margin-left: 10px;
+        text-transform: uppercase; }
+    .products .slide .caption button:first-child {
+      width: 140px; }
+    .products .slide .caption button + button {
+      margin-left: 10px; }
+  .products .pointers {
+    position: absolute;
+    top: 40px;
+    right: 40px; }
+    .products .pointers button {
+      width: 40px;
+      height: 40px;
+      background-color: #7A7A7A;
+      border: none; }
+      .products .pointers button i {
+        color: #fff; }
+
+.footer {
+  border-top: 3px solid #03A9F5;
+  margin-top: 40px;
+  padding: 30px 0 35px;
+  text-align: left;
+  font-family: 'Lato'; }
+  .footer img {
+    max-width: 255px; }
+  .footer h6 {
+    text-transform: uppercase;
+    color: #434F5B;
+    font-weight: bold; }
+  .footer span {
+    color: #909090;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 42%; }
+  .footer p a {
+    color: #909090;
+    text-decoration: none; }
+  .footer p.reffer a {
+    color: #29B0F6; }
+
+/*# sourceMappingURL=style.css.map */
