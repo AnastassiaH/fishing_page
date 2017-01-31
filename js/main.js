@@ -21,7 +21,13 @@ $(document).ready(function(){
 	var owl = $(".carousel");
 	owl.owlCarousel({
 		items : 1,
-        loop: true
+        autoPlay :false,
+        slideSpeed : 300,
+        loop: true,
+        itemsDesktop : [1199, 1],
+        itemsDesktopSmall : [660,1],// betweem 900px and 601px    
+        itemsTablet: [650,1], //2 items between 600 and 0
+        itemsMobile : [400,1], // itemsMobile disabled - inherit from itemsTablet option
 	});
 	owl.on(".owl-wrapper", function (e) {
 		if (e.deltaY > 0) {

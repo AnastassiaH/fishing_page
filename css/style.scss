@@ -130,11 +130,11 @@ header{
         .search{
             height: 40px;
             max-width: 565px;
-            min-width: 300px;
+            min-width: 220px;
             margin: 0 auto;
             
-            .col-sm-8,
-            .col-sm-4{
+            .col-xs-8,
+            .col-xs-4{
                 padding: 0;
             }
             
@@ -342,6 +342,10 @@ header{
     font-family: "Lato";
     position: relative;
     
+//    .owl-item{
+//        width: 100% !important;
+//    }
+    
     .p_items{
         margin-bottom: 15px;
         text-align: left;
@@ -458,6 +462,7 @@ header{
     
     img{
         max-width: 255px;
+        width: 100%;
     }
     
     h6{
@@ -483,4 +488,182 @@ header{
     p.reffer a{
         color: #29B0F6;
     }
+}
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    header{
+        max-height: 500px;
+    }
+    
+    .products .slide .caption button + button{
+        margin-left: 2px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .products .slide .caption button + button{
+        margin-top: 10px;
+    }
+    
+    .products .slide .image{
+        width: 50%;
+    }
+    
+    .products .slide .caption{
+        width: 30%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .top_header{
+        .col-sm-4{
+            width: 33.33%;
+            text-align: center;
+            float: left;
+        }
+    }
+    
+    header .main .search{
+        width: 80% !important;
+    }
+    
+    header .main{
+        margin-top: 60px;
+    }
+    
+    .top_gewasser{
+        .col-xs-12{
+            width: 50%;
+        }
+    }
+    
+    .banners{
+        .col-sm-4.item {
+            width: 33.33%;
+            float: left;
+        }
+    }
+    
+    .how_it_works h3{
+        margin-bottom: 40px;
+    }
+    
+    .how_it_works .fishing img{
+        position: static;
+        width: 85px;
+        margin: 15px auto;
+    }
+    
+    .how_it_works .fishing h4{
+        margin-top: 10px;
+    }
+    
+    
+    .products .slide .image{
+        float: none;
+        width: 95%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .products .slide .caption{
+        float: none;
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .products .slide .caption .rate{
+        margin: 0 auto;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+        .top_header{
+        .col-sm-4{
+            width: 100%;
+        }
+    }
+    
+        .banners{
+        .col-sm-4.item {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+            
+            .row{
+                margin: 0;
+            }
+    }
+    
+    .top_gewasser .col-xs-12{
+        width: 100%;
+    }
+    
+    .top_gewasser .nav-tabs{
+        width: 300px;
+    }
+    
+    .top_gewasser ul li a, 
+    .top_gewasser ul li a:hover{
+        margin: 0 5px;
+        padding: 5px 1px;
+    }
+    
+    .footer{
+        .col-xs-4{
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        
+        .col-xs-3{
+            width: 41%;
+            float: left;
+        }
+    }
+    
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }
